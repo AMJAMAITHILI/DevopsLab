@@ -2,14 +2,20 @@
 
 a = float(input("Enter first number: "))
 b = float(input("Enter second number: "))
-print("1. Addition")
-print("2. Subtraction")
+print("1. Add")
+print("2. Subtract")
+print("3. Multiply")
+print("4. Divide")
 
-choice = input("Enter choice: ")
+choice = input("Choice: ")
 
 if choice == "1":
-    print("Result:", a + b)
+    print(a + b)
 elif choice == "2":
-    print("Result:", a - b)
+    print(a - b)
+elif choice == "3":
+    print(a * b)
+elif choice == "4":
+    print(a / b)
 else:
-    print("Invalid choice")
+    print("Invalid")

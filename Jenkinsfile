@@ -1,22 +1,24 @@
 pipeline {
     agent any
+
     stages {
         stage('Checkout') {
             steps {
                 checkout scm
             }
         }
+
         stage('Build') {
             steps {
-                sh 'mkdir -p out'
-                sh 'javac -d out main.java'
+                bat 'mkdir out'
+                bat 'javac -d out AddNumbers.java'
             }
         }
+
         stage('Run') {
             steps {
-                sh 'java -cp out AddNumbers'
+                bat 'java -cp out AddNumbers'
             }
         }
     }
 }
-

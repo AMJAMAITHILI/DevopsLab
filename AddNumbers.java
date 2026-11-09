@@ -7,4 +7,4 @@ public class AddNumbers {
         System.out.println("Addition: " + sum);
     }
 }
-//jenkinsfile for addition simple pipeline
+ 
